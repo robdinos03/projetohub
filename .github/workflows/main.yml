@@ -12,23 +12,9 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
         
-  Producao:
+  DevTeste:
     runs-on: ubuntu-latest
-    environment:
-      nome: prd
-      url: "robson.cirilo.com.br"
     steps:
-    needs: build
       - name: Run a one-line script
-        run: echo Hello,Comecado a parte PRODUCAO
-        
-        
-  Devteste:
-    runs-on: ubuntu-latest
-    environment:
-      nome: DevTeste
-      url: "robson.cirilo.com.br"
-    steps:
-    needs: Dev
-      - name: Run a one-line script
-        run: echo Hello,Comecado a parte DEV
+        run: echo Hello, DEVTESTE
+               
